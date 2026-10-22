@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import Coche from '../../models/coche';
 
 @Component({
@@ -8,9 +8,8 @@ import Coche from '../../models/coche';
   templateUrl: './hijo-coches-component.html',
 })
 export class HijoCochesComponent {
-  public car:Coche;
+  @Input() car!:Coche;
   constructor(){
-    this.car=new Coche("Ford","Focus",0,25);
   }
 
   acelerar(){
