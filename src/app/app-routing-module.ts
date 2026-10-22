@@ -4,12 +4,15 @@ import { HomeComponent } from './components/home-component/home-component';
 import { ListaProductosComponent } from './components/lista-productos-component/lista-productos-component';
 import { HijoCochesComponent } from './components/hijo-coches-component/hijo-coches-component';
 import { PadreCochesComponent } from './components/padre-coches-component/padre-coches-component';
+import { PadreDeportesComponent } from './components/padre-deportes-component/padre-deportes-component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path:'productos',component:ListaProductosComponent} ,
   {path:'coches',component:HijoCochesComponent},
-  {path:"padre", component:PadreCochesComponent}
+  {path:"padre", component:PadreCochesComponent},
+  {path:"padredeportes", component:PadreDeportesComponent}
+  
   
 ];
 
