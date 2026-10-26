@@ -1,0 +1,10 @@
+<h1>Comics EXCEL </h1>
+<button (click)="cargarComics()">Cargar comic</button>
+@for(comic of arrayComics; track comic) {
+    <div>
+        <h2>{{comic.titulo}}</h2>
+        <img src="{{comic.imagen}}"
+            />
+    </div>
+    
+}
