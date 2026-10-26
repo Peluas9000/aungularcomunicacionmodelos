@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-deporte-component',
@@ -9,9 +9,10 @@ import { Component, Input } from '@angular/core';
 export class DeporteComponent {
   @Input() sport!: string;
   public mensaje!: string;
-  
+  @Output() seleccionarFavoritoPadre :EventEmitter<string>= new EventEmitter<string>();
 
   mostrarFavorito(){
-    this.mensaje = `Mi deporte favorito es ${this.sport}`;
+    this.seleccionarFavoritoPadre.emit(this.sport);
+   
   }
 }
