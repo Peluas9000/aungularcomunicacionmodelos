@@ -12,6 +12,7 @@ import { DeporteComponent } from './components/deporte-component/deporte-compone
 import { PadreNumeroComponent } from './components/padre-numero-component/padre-numero-component';
 import { HijoNumeroComponent } from './components/hijo-numero-component/hijo-numero-component';
 import { ComicsSimplesComponent } from './components/comics-simples-component/comics-simples-component';
+import { ComicsJsonComponent } from './components/comics-json-component/comics-json-component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ComicsSimplesComponent } from './components/comics-simples-component/co
     PadreNumeroComponent,
     HijoNumeroComponent,
     ComicsSimplesComponent,
+    ComicsJsonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [provideBrowserGlobalErrorListeners()],

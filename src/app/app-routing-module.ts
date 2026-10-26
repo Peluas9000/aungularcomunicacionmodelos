@@ -7,6 +7,7 @@ import { PadreCochesComponent } from './components/padre-coches-component/padre-
 import { PadreDeportesComponent } from './components/padre-deportes-component/padre-deportes-component';
 import { PadreNumeroComponent } from './components/padre-numero-component/padre-numero-component';
 import { ComicsSimplesComponent } from './components/comics-simples-component/comics-simples-component';
+import { ComicsJsonComponent } from './components/comics-json-component/comics-json-component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -15,7 +16,8 @@ const routes: Routes = [
   {path:"padre", component:PadreCochesComponent},
   {path:"padredeportes", component:PadreDeportesComponent},
   {path:"numeros" , component:PadreNumeroComponent},
-  {path:"comicsimples", component:ComicsSimplesComponent}
+  {path:"comicsimples", component:ComicsSimplesComponent},
+  {path:"json", component:ComicsJsonComponent}
   
   
 ];
